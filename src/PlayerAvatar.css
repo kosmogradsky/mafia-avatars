@@ -1,0 +1,52 @@
+.playerAvatar {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: filter 0.5s;
+}
+
+.playerAvatarContainer {
+  display: inline-block;
+  margin-right: 1.5rem;
+  position: relative;
+  transition: transform 0.5s;
+}
+
+.playerIndex {
+  position: absolute;
+  color: white;
+  background-color: darkred;
+  font-family: sans-serif;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px 0px rgb(0 0 0 / 75%);
+  top: -5px;
+  left: -10px;
+  transition: background-color 0.5s;
+  z-index: 1;
+}
+
+.playerDead .playerIndex {
+  background-color: #4a4a4a;
+}
+
+.playerDead .playerAvatar {
+  filter: grayscale(100%);
+}
+
+.playerDead.playerAvatarContainer {
+  transform: translateY(1rem);
+}
+
+.roleIcon {
+  width: 2.375rem;
+  position: absolute;
+  z-index: 1;
+  bottom: -1.25rem;
+  right: -0.5rem;
+}

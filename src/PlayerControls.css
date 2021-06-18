@@ -1,0 +1,9 @@
+.controlLabel {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.controlsContainer {
+  margin-bottom: 3rem;
+  margin-right: 3rem;
+}
